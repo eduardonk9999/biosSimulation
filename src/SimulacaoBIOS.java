@@ -1,5 +1,6 @@
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
+import oshi.hardware.GlobalMemory;
 import oshi.hardware.HardwareAbstractionLayer;
 import oshi.software.os.OperatingSystem;
 
@@ -26,9 +27,17 @@ public class SimulacaoBIOS {
         System.out.println("Número de núcleos físicos: " + processor.getPhysicalProcessorCount());
         System.out.println("Número de núcleos lógicos: " + processor.getLogicalProcessorCount());
 
-
-
+        GlobalMemory memory = hal.getMemory();
+        System.out.printf("Memória RAM:%nTotal: %.1f GiB%nDisponível: %.1f GiB%n",
+                memory.getTotal() / (1024.0 * 1024 * 1024),
+                memory.getAvailable() / (1024.0 * 1024 * 1024));
     }
+
+    public  void inicializacaoSistemaOperacional() {
+        System.out.println("Sistema Operacional:");
+        System.out.println("Nome: " + os.getFamily() + " " + os.getVersionInfo().getVersion());
+    }
+
 
 
     public static void main(String[] args) {

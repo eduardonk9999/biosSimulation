@@ -38,9 +38,22 @@ public class SimulacaoBIOS {
         System.out.println("Nome: " + os.getFamily() + " " + os.getVersionInfo().getVersion());
     }
 
+    public void carregarBootloader() {
+        System.out.println("Carregando o bootloader...");
+        System.out.println("Bootloader carregado com sucesso.");
+    }
 
+    public void iniciarSistemaOperacional() {
+        System.out.println("Iniciando o sistema operacional...");
+        System.out.println("Sistema operacional em execução.");
+        System.out.println("Sistema operacional iniciado com sucesso.");
+    }
 
     public static void main(String[] args) {
-
+        SimulacaoBIOS simulacaoBIOS = new SimulacaoBIOS();
+        simulacaoBIOS.inicializacaoHardware();
+        simulacaoBIOS.iniciarSistemaOperacional();
+        simulacaoBIOS.carregarBootloader();
+        simulacaoBIOS.iniciarSistemaOperacional();
     }
 }

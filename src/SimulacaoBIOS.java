@@ -21,7 +21,12 @@ public class SimulacaoBIOS {
         System.out.println("Inicializando componentes de hardware");
 
         CentralProcessor processor = hal.getProcessor();
+        System.out.println("Processador: ");
         System.out.println("Modelo: " + processor.getProcessorIdentifier().getName());
+        System.out.println("Número de núcleos físicos: " + processor.getPhysicalProcessorCount());
+        System.out.println("Número de núcleos lógicos: " + processor.getLogicalProcessorCount());
+
+
 
     }
 

@@ -4,6 +4,8 @@ import oshi.hardware.GlobalMemory;
 import oshi.hardware.HardwareAbstractionLayer;
 import oshi.software.os.OperatingSystem;
 
+//
+
 public class SimulacaoBIOS {
     private SystemInfo systemInfo;
     private HardwareAbstractionLayer hal;

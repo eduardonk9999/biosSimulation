@@ -1,6 +1,6 @@
 # Simulação de BIOS em Java
 
-Este projeto é uma simulação básica de uma BIOS (Basic Input/Output System) implementada em Java. Utiliza a biblioteca OSHI (Operating System and Hardware Information) para obter informações detalhadas sobre o hardware do sistema, como processador, memória RAM e sistema operacional.
+Este projeto é uma simulação básica de uma BIOS (Basic Input/Output System) implementada em Java. Utiliza a biblioteca OSHI (Operating System and Hardware Information) para obter informações detalhadas sobre o hardware do sistema, como processador, memória RAM e sistema operacional...
 
 ## Descrição do Projeto
 
